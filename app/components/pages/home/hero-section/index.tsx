@@ -4,7 +4,6 @@ import Image from 'next/image'
 import { HiChevronDoubleRight } from 'react-icons/hi'
 import { FiGithub, FiLinkedin, FiInstagram } from 'react-icons/fi'
 import { SiWhatsapp, SiTiktok } from 'react-icons/si'
-import { icons } from 'react-icons/lib'
 
 const MOCK_CONTACTS = [
   {
@@ -12,11 +11,11 @@ const MOCK_CONTACTS = [
     icon: <FiGithub />,
   },
   {
-    url: 'https://github.com/darioreisjr',
+    url: 'https://www.linkedin.com/in/darioreisjr/',
     icon: <FiLinkedin />,
   },
   {
-    url: 'https://github.com/darioreisjr',
+    url: 'https://instagram.com/darioreisjr',
     icon: <FiInstagram />,
   },
   {
@@ -24,7 +23,7 @@ const MOCK_CONTACTS = [
     icon: <SiWhatsapp />,
   },
   {
-    url: 'https://github.com/darioreisjr',
+    url: 'https://tiktok.com/darioreisjr',
     icon: <SiTiktok />,
   },
 ]
