@@ -4,33 +4,15 @@ import { Button } from '@/app/components/button'
 import { TechBadge } from '@/app/components/tech-badge'
 import Image from 'next/image'
 import { HiChevronDoubleRight } from 'react-icons/hi'
-import { FiGithub, FiLinkedin, FiInstagram } from 'react-icons/fi'
-import { SiWhatsapp, SiTiktok } from 'react-icons/si'
+import { HomePageInfo } from '@/app/types/page-info'
+import { RichText } from '@/app/components/rich-text'
+import { CMSIcon } from '@/app/components/cms-icon'
 
-const MOCK_CONTACTS = [
-  {
-    url: 'https://github.com/darioreisjr',
-    icon: <FiGithub />,
-  },
-  {
-    url: 'https://www.linkedin.com/in/darioreisjr/',
-    icon: <FiLinkedin />,
-  },
-  {
-    url: 'https://instagram.com/darioreisjr',
-    icon: <FiInstagram />,
-  },
-  {
-    url: 'https://github.com/darioreisjr',
-    icon: <SiWhatsapp />,
-  },
-  {
-    url: 'https://tiktok.com/darioreisjr',
-    icon: <SiTiktok />,
-  },
-]
+type HomeSectionProps = {
+  homeInfo: HomePageInfo
+}
 
-export const HeroSection = () => {
+export const HeroSection = ({ homeInfo }: HomeSectionProps) => {
   const handleContact = () => {
     const contactSections = document.querySelector('#contact')
     if (contactSections) {
@@ -44,16 +26,12 @@ export const HeroSection = () => {
           <p className="font-mono text-purple-400">Olá, meu nome é</p>
           <h2 className="text-4xl font-medium mt-2">Dario Reis</h2>
 
-          <p className="text-gray-400 my-6 text-sm sm:text-base">
-            Sou Dario Reis, tenho 27 anos, sou desenvolvedor focado no front-end
-            e venho constantemente aprimorando meus conhecimentos em HTML, CSS,
-            JavaScript, ReactJS, Java . Estou cursando Análise e Desenvolvimento
-            de Sistemas na Faculdade Estácio, atualmente estou no terceiro
-            semestre, e estudo tambem pela plataforma da alura.
-          </p>
+          <div className="text-gray-400 my-6 text-sm sm:text-base">
+            <RichText content={homeInfo.introduction.raw} />
+          </div>
           <div className="flex flex-wrap gap-x-2 gap-y-3 lg:max-w-[340px] ">
-            {Array.from({ length: 7 }).map((index) => (
-              <TechBadge name="Next.js" />
+            {homeInfo.technologies.map((tech, i) => (
+              <TechBadge key={i} name={tech.name} />
             ))}
           </div>
 
@@ -64,7 +42,7 @@ export const HeroSection = () => {
             </Button>
 
             <div className="text-gray-600 text-2xl flex items-center h-20 gap-3">
-              {MOCK_CONTACTS.map((contact, index) => (
+              {homeInfo.socials.map((contact, index) => (
                 <a
                   href={contact.url}
                   key={`contact-${index}`}
@@ -72,7 +50,7 @@ export const HeroSection = () => {
                   rel="noreferrer"
                   className="hover:text-gray-100 transition-colors"
                 >
-                  {contact.icon}
+                  <CMSIcon icon={contact.iconSvg} />
                 </a>
               ))}
             </div>
@@ -82,7 +60,7 @@ export const HeroSection = () => {
         <Image
           width={420}
           height={420}
-          src="/images/profile-pic.png"
+          src={homeInfo.profilePicture.url}
           alt="foto do perfil do Dario Reis"
           className="w-[300px] h-[300px] lg:w-[420px] lg:h-[404px] mb-6 lg:mb-0 shadow-2xl rounded-lg object-cover"
         />
