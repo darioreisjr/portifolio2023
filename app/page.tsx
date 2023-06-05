@@ -8,29 +8,56 @@ import { fetchHygraphQuery } from './ultils/fetch-hygraph-query'
 
 const getPageData = async (): Promise<HomePageData> => {
   const query = `
-    query PageInfoQuery {
-      page(where: {slug: "home"}) {
-        introduction {
-          raw
+  query PageInfoQuery {
+    page(where: {slug: "home"}) {
+      introduction {
+        raw
+      }
+      technologies {
+        name
+      }
+      profilePicture {
+        url
+      }
+      socials {
+        url
+        iconSvg
+      }
+      knownTechs {
+        iconSvg
+        name
+        startDate
+      }
+      highlightProjects {
+        slug
+        thumbnail {
+          url
         }
+        title
+        shortDescription
         technologies {
           name
         }
-        profilePicture {
-          url
-        }
-        socials {
-          url
-          iconSvg
-        }
-        knownTechs {
-          iconSvg
-          name
-          startDate
-        }
       }
     }
-  `
+    workExperiences {
+      companyLogo {
+        url
+      }
+      role
+      companyName
+      companyUrl
+      startDate
+      endDate
+      description {
+        raw
+      }
+      technologies {
+        name
+      }
+    }
+  }
+`
 
   return fetchHygraphQuery(
     query,
@@ -39,13 +66,13 @@ const getPageData = async (): Promise<HomePageData> => {
 }
 
 export default async function Home() {
-  const { page: pageData } = await getPageData()
+  const { page: pageData, workExperiences } = await getPageData()
   return (
     <>
       <HeroSection homeInfo={pageData} />
-      <KnownTechs />
-      <HighLightedProjects />
-      <WorkExperience />
+      <KnownTechs techs={pageData.knownTechs} />
+      <HighLightedProjects projects={pageData.highLightProjects} />
+      <WorkExperience experiences={workExperiences} />
     </>
   )
 }
