@@ -1,18 +1,11 @@
+import { ProjectSection } from '@/app/types/projects'
 import Image from 'next/image'
 
-export const ProjectSections = () => {
-  const sections = [
-    {
-      title: 'Login',
-      image:
-        'https://cdn.pixabay.com/photo/2021/12/07/19/03/login-6853900_1280.png',
-    },
-    {
-      title: 'Home',
-      image:
-        'https://cdn.pixabay.com/photo/2019/06/19/14/55/online-4285034_1280.png',
-    },
-  ]
+type ProjectSectionsProps = {
+  sections: ProjectSection[]
+}
+
+export const ProjectSections = ({ sections }: ProjectSectionsProps) => {
   return (
     <section className="container my-12 md:my-32 flex flex-col gap-8 md:gap-32">
       {sections.map((section) => (
@@ -24,7 +17,7 @@ export const ProjectSections = () => {
             {section.title}
           </h2>
           <Image
-            src={section.image}
+            src={section.image.url}
             alt={`Imagem da sessão ${section.title}`}
             width={1080}
             height={372}
