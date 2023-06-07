@@ -18,10 +18,10 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
           height={304}
           alt={`Thumbnail do projeto ${project.title}`}
           src={project.thumbnail.url}
-          className="w-full  object-cover rounded-lg"
+          className="w-full h-full object-cover rounded-lg"
         />
       </div>
-      <div>
+      <div className="flex-1 lg:py-[18px]">
         <h3 className="flex items-center gap-3 font-medium text-lg text-gray-50">
           <VscExtensions className="text-purple-800  h-[20px] w-[20px]" />
           {project.title}

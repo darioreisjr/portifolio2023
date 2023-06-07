@@ -70,7 +70,7 @@ export async function generateStaticParams() {
       }
     }
   `
-  const { projects } = await fetchHygraphQuery(query)
+  const { projects } = await fetchHygraphQuery<ProjectsPageStaticData>(query)
 
   return projects
 }
