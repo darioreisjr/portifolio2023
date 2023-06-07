@@ -2,7 +2,6 @@ import { HeroSection } from './components/pages/home/hero-section'
 import { HighLightedProjects } from './components/pages/home/highlighted-projects'
 import { KnownTechs } from './components/pages/home/known-techs'
 import { WorkExperience } from './components/pages/home/work-experience'
-import page from './projects/page'
 import { HomePageData } from './types/page-info'
 import { fetchHygraphQuery } from './ultils/fetch-hygraph-query'
 
@@ -71,7 +70,7 @@ export default async function Home() {
     <>
       <HeroSection homeInfo={pageData} />
       <KnownTechs techs={pageData.knownTechs} />
-      <HighLightedProjects projects={pageData.highLightProjects} />
+      <HighLightedProjects projects={pageData.highlightProjects} />
       <WorkExperience experiences={workExperiences} />
     </>
   )
