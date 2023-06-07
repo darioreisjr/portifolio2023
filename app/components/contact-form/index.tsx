@@ -6,7 +6,8 @@ import { BiSend } from 'react-icons/bi'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { type } from 'os'
+import axios from 'axios'
+import { toast } from 'react-hot-toast'
 
 const contactFormSchema = z.object({
   name: z.string().min(3).max(100),
@@ -17,12 +18,23 @@ const contactFormSchema = z.object({
 type contactFormData = z.infer<typeof contactFormSchema>
 
 export const ContactForm = () => {
-  const { handleSubmit, register } = useForm<contactFormData>({
+  const {
+    handleSubmit,
+    register,
+    reset,
+    formState: { isSubmitting },
+  } = useForm<contactFormData>({
     resolver: zodResolver(contactFormSchema),
   })
 
-  const onSubmit = (data: contactFormData) => {
-    console.log(data)
+  const onSubmit = async (data: contactFormData) => {
+    try {
+      await axios.post('/api/contact', data)
+      toast.success('Mensagem enviada com sucesso!')
+      reset()
+    } catch {
+      toast.error('Ocorreu um erro ao enviar uma mensagem, tente novamente.')
+    }
   }
 
   return (
@@ -60,7 +72,10 @@ export const ContactForm = () => {
             maxLength={500}
           />
 
-          <Button className="mt-6 w-max mx-auto shadow-button">
+          <Button
+            className="mt-6 w-max mx-auto shadow-button"
+            disabled={isSubmitting}
+          >
             Enviar Mensagem <BiSend size={18} />
           </Button>
         </form>
