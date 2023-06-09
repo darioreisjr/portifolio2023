@@ -1,5 +1,5 @@
 import { CMSIcon } from '@/app/components/cms-icon'
-import { Knowntech as IknownTech } from '@/app/types/projects'
+import { KnownTech as IknownTech } from '@/app/types/projects'
 import { getRelativeTimeString } from '@/app/ultils/get-relative-time'
 
 type KnownTechProps = {
