@@ -24,13 +24,21 @@
 
 :small_blue_diamond: [Deploy da Aplicação](#deploy-da-aplicação-dash)
 
-:small_blue_diamond: [Resolvendo problemas](#resolvendo-problemas-exclamation)
-
 :small_blue_diamond: [Conceitos abordados](#conceitos-abordados)
 
+:small_blue_diamond: [Resolvendo problemas](#resolvendo-problemas-exclamation)
 
+:small_blue_diamond: [Tarefas em aberto](#tarefas-em-aberto)
 
-:small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação-arrow_forward)
+:small_blue_diamond: [Tecnologias](#rocket-tecnologias)
+
+:small_blue_diamond: [Instalação e execução](#instalação-e-execução)
+
+:small_blue_diamond: [Contrubuir](#muscle-contribuir)
+
+:small_blue_diamond: [Desenvolvedor](#desenvolvedor-octocat)
+
+:small_blue_diamond: [Licença](#licença)
 
 <hr/>
 
@@ -120,8 +128,6 @@ Um dos principais problemas que houve no desenvolvimento do projeto foi a respon
 
 ## Tarefas em aberto
 
-Se for o caso, liste tarefas/funcionalidades que ainda precisam ser implementadas na sua aplicação
-
 :memo: Dark Mode 
 
 :memo: Menu responsivo drawer
@@ -142,7 +148,7 @@ Se for o caso, liste tarefas/funcionalidades que ainda precisam ser implementada
 -  [Hygraph CMS](https://hygraph.com/)
 
 
-## 📥 Instalação e execução
+##  Instalação e execução
 
 Faça um clone desse repositório e acesse o diretório.
 
