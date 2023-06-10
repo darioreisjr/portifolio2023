@@ -24,7 +24,11 @@
 
 :small_blue_diamond: [Deploy da Aplicação](#deploy-da-aplicação-dash)
 
+:small_blue_diamond: [Resolvendo problemas](#resolvendo-problemas-exclamation)
+
 :small_blue_diamond: [Conceitos abordados](#conceitos-abordados)
+
+
 
 :small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação-arrow_forward)
 
@@ -66,7 +70,7 @@ Todos os dados sobre os projetos, informações, tecnologias e etc. veem do Hygr
 
 ## Deploy da Aplicação :dash:
 
->  <a href="https://darioreisjr.vercel.app/" target="_blank">Link do deploy da aplicação<a/>
+>  <a href="https://darioreisjr.vercel.app/" target='_blank'>Link do deploy da aplicação<a/>
 
 <hr/>
 
