@@ -196,7 +196,7 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 
 
 <hr/>
-<p> Copyright :copyright: 2023 - portifolio Dario Reis<p/>
+<p align="center"> Copyright :copyright: 2023 - portifolio Dario Reis<p/>
 
 
 
