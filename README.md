@@ -122,7 +122,7 @@ Se for o caso, liste tarefas/funcionalidades que ainda precisam ser implementada
 
 :memo: Menu responsivo drawer
 
-:memo: Adiciona pgina de Blog 
+:memo: Adiciona página de Blog 
 
 <hr/>
 
