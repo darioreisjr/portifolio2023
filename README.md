@@ -24,7 +24,7 @@
 
 :small_blue_diamond: [Deploy da Aplicação](#deploy-da-aplicação-dash)
 
-:small_blue_diamond: [Pré-requisitos](#pré-requisitos)
+:small_blue_diamond: [Conceitos abordados](#conceitos-abordados)
 
 :small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação-arrow_forward)
 
@@ -39,6 +39,8 @@
 Todos os dados sobre os projetos, informações, tecnologias e etc. veem do Hygraph que é um CMS de API nativa do GraphQL, para entregar melhores projetos em escala. A criação de projetos com GraphQL CMS permite que criem projetos de alto desempenho com uma experiência de desenvolvedor imbatível e os recursos poderosos.
   
 </p>
+
+<hr/>
 
 ### Funcionalidades
 
@@ -60,9 +62,134 @@ Todos os dados sobre os projetos, informações, tecnologias e etc. veem do Hygr
 
 - [x] **Dinâmico**: Tudo e controlado por um CMS onde pode se mudar tudo e adicionar mais projetos, tecnologias e experiências.
 
+<hr/>
+
 ## Deploy da Aplicação :dash:
 
 > Link do deploy da aplicação. (https://darioreisjr.vercel.app/)
+
+<hr/>
+
+### Conceitos abordados
+
+- Uso de flexbox para alinhar e ajustar elementos na página.
+
+- Manipulação no eixo z com o uso da propriedade `z-index` no css.
+
+- Consumo de api com o uso da lib [axios](https://github.com/axios/axios).
+
+- Conceitos de tipagem no typescript.
+
+- Uso do conceito de função recursiva.
+
+- Configuração de fonte local.
+
+- Uso de TailwindCss
+
+- Uso de CMS Hygraph
+
+- Controle de versionamento
+
+- Deploy na Vercel
+
+- Animação com Framer Motion
+
+- Discord WebHook
+
+- Seo estático e dinâmico
+
+- Rotas estaticas
+
+- Next.js 13
+
+- Fetch Api
+
+- zod para validação
+
+<hr/>
+
+## Resolvendo Problemas :exclamation:
+
+Em [issues]() foram abertos alguns problemas gerados durante o desenvolvimento desse projeto e como foram resolvidos. 
+
+<hr/>
+
+## Tarefas em aberto
+
+Se for o caso, liste tarefas/funcionalidades que ainda precisam ser implementadas na sua aplicação
+
+:memo: Dark Mode 
+
+:memo: Menu drawer
+
+<hr/>
+
+
+## :rocket: Tecnologias
+
+-  [React](https://pt-br.reactjs.org/)
+-  [Styled-components](https://www.styled-components.com/)
+-  [React-Icons](https://react-icons.netlify.com/)
+-  [Axios](https://github.com/axios/axios)
+-  [React Router](https://reactrouter.com/web/guides/quick-start)
+-  [TypeScript](https://www.typescriptlang.org/)
+
+## 📥 Instalação e execução
+
+Faça um clone desse repositório e acesse o diretório.
+
+```bash
+$ git clone https://github.com/darioreisjr/portifolio2023.git && cd portifolio2023
+```
+
+```bash
+# Instalando as dependências
+$ yarn
+
+# Executanto aplicação
+$ yarn start
+
+```
+
+## :muscle: Contribuir
+
+Faça o `fork` e clone o projeto a partir do seu usuário.
+
+```bash
+# Clonando projeto
+$ git clone https://github.com/SEU-NOME-DE-USUARIO/portifolio2023.git
+
+# Criando um branch
+$ git branch minha-alteracao
+
+# Acessando o novo branch
+$ git checkout -b minha-alteracao
+
+# Adicionando os arquivos alterados
+$ git add .
+
+# Criando commit e a mensagem
+$ git commit -m "Corrigindo...."
+
+# Enviando alterações para o brach
+$ git push origin minha-alteracao
+```
+Você deve navegar até o seu repositório onde fez o fork e clicar no botão *New pull request* no lado esquerdo da página.
+
+<hr/>
+
+## Desenvolvedor :octocat:
+
+[<img src="https://avatars.githubusercontent.com/u/85812823?v=4" width=115><br><sub>Dario Reis</sub>](https://github.com/darioreisjr)
+
+
+<hr/>
+
+## Licença 
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+
+Copyright :copyright: 2023 - portifolio Dario Reis
 
 
 
