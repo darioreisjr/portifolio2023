@@ -110,7 +110,7 @@ Todos os dados sobre os projetos, informações, tecnologias e etc. veem do Hygr
 
 ## Resolvendo Problemas :exclamation:
 
-Em [issues]() foram abertos alguns problemas gerados durante o desenvolvimento desse projeto e como foram resolvidos. 
+Um dos principais problemas que houve no desenvolvimento do projeto foi a responsividade, mais com o uso do tailwind ficous facil de resolver. Outro problema foi na hora do deploy mais foi por conta da biblioteca de icones que estava com conflito mais na troca de icone importado tudo se resolveu. 
 
 <hr/>
 
@@ -120,19 +120,23 @@ Se for o caso, liste tarefas/funcionalidades que ainda precisam ser implementada
 
 :memo: Dark Mode 
 
-:memo: Menu drawer
+:memo: Menu responsivo drawer
+
+:memo: Adiciona pgina de Blog 
 
 <hr/>
 
 
 ## :rocket: Tecnologias
 
--  [React](https://pt-br.reactjs.org/)
--  [Styled-components](https://www.styled-components.com/)
--  [React-Icons](https://react-icons.netlify.com/)
--  [Axios](https://github.com/axios/axios)
--  [React Router](https://reactrouter.com/web/guides/quick-start)
+-  [Next.js 13](https://nextjs.org/)
 -  [TypeScript](https://www.typescriptlang.org/)
+-  [Tailwind](https://tailwindcss.com/)
+-  [React-Icons](https://react-icons.github.io/react-icons)
+-  [Axios](https://github.com/axios/axios)
+-  [Framer Motion](https://www.framer.com/motion/)
+-  [Hygraph CMS](https://hygraph.com/)
+
 
 ## 📥 Instalação e execução
 
@@ -147,7 +151,7 @@ $ git clone https://github.com/darioreisjr/portifolio2023.git && cd portifolio20
 $ yarn
 
 # Executanto aplicação
-$ yarn start
+$ yarn run dev
 
 ```
 
@@ -189,8 +193,10 @@ Você deve navegar até o seu repositório onde fez o fork e clicar no botão *N
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
 
-Copyright :copyright: 2023 - portifolio Dario Reis
 
+
+<hr/>
+<p> Copyright :copyright: 2023 - portifolio Dario Reis<p/>
 
 
 
