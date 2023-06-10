@@ -16,7 +16,7 @@
 
 <hr/>
 
-### Tópicos 
+# Tópicos 
 
 :small_blue_diamond: [Descrição do projeto](#descrição-do-projeto)
 
@@ -42,7 +42,7 @@
 
 <hr/>
 
-### Descrição do projeto
+# Descrição do projeto
 
 <p align="justify">
   
@@ -54,7 +54,7 @@ Todos os dados sobre os projetos, informações, tecnologias e etc. veem do Hygr
 
 <hr/>
 
-### Funcionalidades
+# Funcionalidades
 
 - [x] **Listagem de Projetos**: Listar os projetos com o uso da API GraphQL.
 
@@ -76,13 +76,13 @@ Todos os dados sobre os projetos, informações, tecnologias e etc. veem do Hygr
 
 <hr/>
 
-## Deploy da Aplicação :dash:
+# Deploy da Aplicação :dash:
 
 >  <a href="https://darioreisjr.vercel.app/" target='_blank'>Link do deploy da aplicação<a/>
 
 <hr/>
 
-### Conceitos abordados
+# Conceitos abordados
 
 - Uso de flexbox para alinhar e ajustar elementos na página.
 
@@ -120,13 +120,13 @@ Todos os dados sobre os projetos, informações, tecnologias e etc. veem do Hygr
 
 <hr/>
 
-## Resolvendo Problemas :exclamation:
+# Resolvendo Problemas :exclamation:
 
 Um dos principais problemas que houve no desenvolvimento do projeto foi a responsividade, mais com o uso do tailwind ficous facil de resolver. Outro problema foi na hora do deploy mais foi por conta da biblioteca de icones que estava com conflito mais na troca de icone importado tudo se resolveu. 
 
 <hr/>
 
-## Tarefas em aberto
+# Tarefas em aberto
 
 :memo: Dark Mode 
 
@@ -137,7 +137,7 @@ Um dos principais problemas que houve no desenvolvimento do projeto foi a respon
 <hr/>
 
 
-## :rocket: Tecnologias
+# :rocket: Tecnologias
 
 -  [Next.js 13](https://nextjs.org/)
 -  [TypeScript](https://www.typescriptlang.org/)
@@ -148,7 +148,7 @@ Um dos principais problemas que houve no desenvolvimento do projeto foi a respon
 -  [Hygraph CMS](https://hygraph.com/)
 
 
-##  Instalação e execução
+#  Instalação e execução
 
 Faça um clone desse repositório e acesse o diretório.
 
@@ -165,7 +165,7 @@ $ yarn run dev
 
 ```
 
-## :muscle: Contribuir
+# :muscle: Contribuir
 
 Faça o `fork` e clone o projeto a partir do seu usuário.
 
@@ -192,14 +192,14 @@ Você deve navegar até o seu repositório onde fez o fork e clicar no botão *N
 
 <hr/>
 
-## Desenvolvedor :octocat:
+# Desenvolvedor :octocat:
 
 [<img src="https://avatars.githubusercontent.com/u/85812823?v=4" width=115><br><sub>Dario Reis</sub>](https://github.com/darioreisjr)
 
 
 <hr/>
 
-## Licença 
+# Licença 
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
 
