@@ -66,7 +66,7 @@ Todos os dados sobre os projetos, informações, tecnologias e etc. veem do Hygr
 
 ## Deploy da Aplicação :dash:
 
-> Link do deploy da aplicação. (https://darioreisjr.vercel.app/)
+>  <a href="https://darioreisjr.vercel.app/" target="_blank">Link do deploy da aplicação<a/>
 
 <hr/>
 
